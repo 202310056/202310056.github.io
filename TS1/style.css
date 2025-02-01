@@ -1,0 +1,91 @@
+body {
+    font-family: 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.resume {
+    width: 60%;
+    margin: 0;
+    padding: 100px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.header-image img {
+    width: 150px;
+    height: auto;
+}
+
+section h2 {
+    margin-top: 40px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 0;
+}
+
+.btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    padding: 11px;
+    color: #fff;
+    background-color: #ffc0cb;
+    border-radius: 10px;
+}
+
+.acadBackground, .skills {
+    margin-top: 40px;
+}
+
+.skills ul {
+    padding-left: 30px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+}
+
+.education > .yrlevel {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.education > .yrlevel > h3 {
+    flex: 1;
+}
+
+.education > .yrlevel > .details {
+    flex: 1;
+    text-align: left;
+}
+
+.education > .yrlevel > h3{
+    margin-top: 20px; 
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume - Montefalcon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button type="button" onclick="changeColor()" class="btn">Change Color</button>
+    <div id="container" class="resume">
+        <header>
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Jennifer Lhee S. Montefalcon</h1>
+                    <p>Address: 2051 Sta. Mesa, Manila</p>
+                    <p>Contact No.: 09182674879</p>
+                    <p>Email: jennimontefalcon@gmail.com</p>
+                </div>
+                <div class="header-image">
+                    <img src="image/image.png" alt="Profile Picture">
+                </div>
+            </div>
+        </header>
+        <hr>
+        <section>
+            <h2>OBJECTIVE</h2>
+            <p>Passionate IT professional with a strong foundation in software development, and system administration. Seeking an opportunity to apply my technical skills in programming, database management, and cybersecurity to contribute to innovative solutions and enhance business operations. I am eager to learn and grow in a dynamic environment while ensuring efficiency, security, and user-friendly experiences in technology-driven systems.</p>
+        </section>
+        <section class="acadBackground">
+            <h2>ACADEMIC BACKGROUNDS</h2>
+            <div class="education">
+                <div class="yrlevel">
+                    <h3>Tertiary</h3>
+                    <div class="details">
+                        <p>FEU Institute of Technology</p>
+                        <p>2023 - Present</p>
+                    </div>
+                </div>
+                <div class="yrlevel">
+                    <h3>Secondary</h3>
+                    <div class="details">
+                        <p>Arellano University - Juan Sumulong Campus</p>
+                        <p>2021 - 2023</p>
+                        <p>Eulogio Rodriguez Vocational High School</p>
+                        <p>2017 - 2021</p>
+                    </div>
+                </div>
+                <div class="yrlevel">
+                    <h3>Primary</h3>
+                    <div class="details">
+                        <p>Pio del Pilar Elementary School</p>
+                        <p>2011 - 2017</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <h2>SKILLS</h2>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        function changeColor() {
+            let container = document.getElementById("container");
+            if (container.style.backgroundColor === "white") {
+                container.style.backgroundColor = "pink";
+                container.style.color = "deeppink";
+            } else {
+                container.style.backgroundColor = "white";
+                container.style.color = "black";
+            }
+        }
+    </script>
+</body>
+</html>
