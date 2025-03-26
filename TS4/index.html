@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="main-menu-btn" onclick="goToMainMenu()">MAIN MENU</button>
+    
+    <div class="container-fluid menu-container">
+        <div class="header-text">
+            <h1 class="title">BEST OF MERRIDIEN</h1>
+            <h2 class="subtitle">Restaurant Guide</h2>
+            <h4 class="producer">PRODUCED BY: LOCAL MAGAZINE</h4>
+        </div>
+        
+        <div class="row restaurant-list" id="restaurant-list">
+            <div class="col-md-3" onclick="showRestaurant('Gabel Loffel')">
+                <div class="restaurant-card">
+                    <img src="gabel_loffel.png" alt="Gabel Loffel">
+                    <div class="label">GABEL LOFFEL</div>
+                    <div class="hover-info">---------------------- <br>Get out your Lederhosen!<br>---------------------- <br>▶ More</div>
+                </div>
+            </div>
+            <div class="col-md-3" onclick="showRestaurant('Gary Gari')">
+                <div class="restaurant-card">
+                    <img src="gary_gari.png" alt="Gary Gari">
+                    <div class="label">GARY GARI</div>
+                    <div class="hover-info">---------------------- <br>The delicious headquarters for <br>all your ginger related needs!<br>---------------------- <br>▶ More</div>
+                </div>
+            </div>
+            <div class="col-md-3" onclick="showRestaurant('Il Piatto')">
+                <div class="restaurant-card">
+                    <img src="il_piatto.png" alt="Il Piatto">
+                    <div class="label">IL PIATTO</div>
+                    <div class="hover-info">---------------------- <br>Got wild finicky kids? Head for Il <br>Piatto for kid-friendly Italian Fun!<br>---------------------- <br>▶ More</div>
+                </div>
+            </div>
+            <div class="col-md-3" onclick="showRestaurant('Pierre Platters')">
+                <div class="restaurant-card">
+                    <img src="pierre_platiers.png" alt="Pierre Platters">
+                    <div class="label">PIERRE PLATTERS</div>
+                    <div class="hover-info">---------------------- <br>Smart talks. Smart eats!<br>---------------------- <br>▶ More</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="restaurant-details" id="restaurant-details" style="display: none;"></div>
+    </div>
+
+    <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
